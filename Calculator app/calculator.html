@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        The Basic Calculator
+    </title>
+    <link rel ="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="page">
+        <div class="calculator">
+            <p class="heading">CALCULATOR</p>
+            <form>
+                <div class="calcus">
+                    <input type="text" name="calcus">
+                </div>
+                <div>
+                    <input type="button" class="ac" value="AC" onclick = "calcus.value = ''">
+                    <input type="button" value="DEL" onclick = "calcus.value = calcus.value.toString().slice(0,-1) ">
+                    <input type="button" value="." onclick = "calcus.value += '.'">
+                    <input type="button" value="/" onclick = "calcus.value += '/'">
+                </div>
+                 <div>
+                    <input type="button" value="7" onclick = "calcus.value += '7'">
+                    <input type="button" value="8" onclick = "calcus.value += '8'">
+                    <input type="button" value="9" onclick = "calcus.value += '9'">
+                    <input type="button" value="x" onclick = "calcus.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick = "calcus.value += '4'">
+                    <input type="button" value="5" onclick = "calcus.value += '5'">
+                    <input type="button" value="6" onclick = "calcus.value += '6'">
+                    <input type="button" value="-" onclick = "calcus.value = '-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick = "calcus.value += '1'">
+                    <input type="button" value="2" onclick = "calcus.value += '2'">
+                    <input type="button" value="3" onclick = "calcus.value += '3'">
+                    <input type="button" value="+" onclick = "calcus.value += '+'">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick = "calcus.value += '0'">
+                    <input type="button" value="00" onclick = "calcus.value += '00'">
+                    <input type="button" value="=" class="equal" onclick = "calcus.value = eval(calcus.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

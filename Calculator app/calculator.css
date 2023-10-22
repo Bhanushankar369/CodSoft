@@ -1,0 +1,73 @@
+*{
+    
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #0f1850;
+    background-position: fixed;
+}
+::selection{
+    background-color: aquamarine;
+}
+.calculator:hover{
+    box-shadow: 0 18px 36px rgba(4, 250, 246, 0.995), 0 14px 11px rgba(231, 19, 19, 0.83);
+}
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background-color: #7ba984;
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size:  20px;
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+    margin: 10px;
+}
+.calculator form .ac:hover{
+    color: #d31c1c;
+}
+.calculator form input:hover{
+    color: #3c1751;
+}
+form .calcus{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .calcus input{
+    text-align: right;
+    flex: 1;
+    font-size: 40px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
+}
+p.heading{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    font-family: consolas ,Arial, Helvetica, sans-serif;
+    color:#fff;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    margin-top: 12PX;
+    cursor: pointer;
+}
